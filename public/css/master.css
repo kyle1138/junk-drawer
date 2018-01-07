@@ -1,0 +1,9 @@
+.header{
+    width: 100%;
+    border-bottom: 40px solid #2323ee;
+}
+
+h1{
+  font-size: 5em;
+  line-height: 1.4;
+}
