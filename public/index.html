@@ -7,13 +7,38 @@
     <link rel="stylesheet" href="./css/master.css">
   </head>
   <body>
+    <script type="text/javascript" src="./js/clock.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
     <header class="header">
       <h1>Kyle Hogan</h1>
     </header>
     <main>
-      <canvas id="canvas" width="600" height="300"></canvas>
+      <div class="clock">
+        <canvas id="canvas" width="600" height="300"></canvas>
+
+        <form id="clock-inputs" name="clock-form" onSubmit="buildClock">
+          <label for="hoursX">hoursX</label>
+          <input type="number" name="hoursX" value="100">
+          <label for="hoursY">hoursY</label>
+          <input type="number" name="hoursY" value="150">
+          <label for="minutesX">minutesX</label>
+          <input type="number" name="minutesX" value="300">
+          <label for="minutesY">minutesY</label>
+          <input type="number" name="minutesY" value="150">
+          <label for="secondsX">secondsX</label>
+          <input type="number" name="secondsX" value="500">
+          <label for="secondsY">secondsY</label>
+          <input type="number" name="secondsY" value="150">
+          <label for="fontSize">fontSize</label>
+          <input type="number" name="fontSize" value="45">
+          <button type="button" name="button" onclick="buildClock()">buildClock</button>
+        </form>
+      </div>
+
     </main>
+    <script type="text/javascript">
+
+    </script>
   </body>
-  <script type="text/javascript" src="./js/clock.js"></script>
-  <script type="text/javascript" src="./js/index.js"></script>
+
 </html>
